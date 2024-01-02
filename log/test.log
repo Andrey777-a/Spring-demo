@@ -1,0 +1,179 @@
+2024-01-02T19:02:16.967+02:00  INFO 3268 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 3268 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:02:17.021+02:00  INFO 3268 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "test"
+2024-01-02T19:02:18.205+02:00  INFO 19416 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 19416 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:02:18.209+02:00  INFO 19416 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "test"
+2024-01-02T19:02:20.568+02:00  INFO 19416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:02:20.821+02:00  INFO 19416 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62735b13
+2024-01-02T19:02:20.824+02:00  INFO 19416 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:02:22.391+02:00  INFO 19416 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:02:23.812+02:00  INFO 19416 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 6.427 seconds (process running for 8.247)
+2024-01-02T19:02:25.274+02:00  INFO 19416 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:02:25.279+02:00  INFO 19416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:02:25.294+02:00  INFO 19416 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T19:02:29.832+02:00  INFO 3268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:02:30.135+02:00  INFO 3268 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@285bf5ac
+2024-01-02T19:02:30.138+02:00  INFO 3268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:02:31.818+02:00  INFO 3268 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:02:32.906+02:00  INFO 3268 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 16.747 seconds (process running for 18.811)
+2024-01-02T19:02:32.910+02:00  INFO 3268 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:02:32.915+02:00  INFO 3268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:02:32.926+02:00  INFO 3268 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T19:02:38.636+02:00  INFO 22220 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 22220 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:02:38.637+02:00  INFO 22220 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "test"
+2024-01-02T19:02:40.645+02:00  INFO 22220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:02:40.909+02:00  INFO 22220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11399548
+2024-01-02T19:02:40.912+02:00  INFO 22220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:02:42.210+02:00  INFO 22220 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:02:43.116+02:00  INFO 22220 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.946 seconds (process running for 6.143)
+2024-01-02T19:02:43.901+02:00  INFO 22220 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:02:43.904+02:00  INFO 22220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:02:43.915+02:00  INFO 22220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T19:21:00.461+02:00  INFO 12784 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 12784 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:21:00.463+02:00  INFO 12784 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "test"
+2024-01-02T19:21:02.348+02:00  INFO 12784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:21:02.580+02:00  INFO 12784 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22da200e
+2024-01-02T19:21:02.582+02:00  INFO 12784 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:21:03.880+02:00  INFO 12784 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:21:04.954+02:00  INFO 12784 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.935 seconds (process running for 6.07)
+2024-01-02T19:21:05.643+02:00  INFO 12784 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:21:05.644+02:00  INFO 12784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:21:05.656+02:00  INFO 12784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T19:24:11.003+02:00  INFO 22716 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 22716 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:24:11.004+02:00  INFO 22716 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T19:24:12.830+02:00  INFO 22716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:24:13.081+02:00  INFO 22716 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@43e8f1c
+2024-01-02T19:24:13.084+02:00  INFO 22716 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:24:14.411+02:00  INFO 22716 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:24:15.383+02:00  INFO 22716 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.806 seconds (process running for 5.934)
+2024-01-02T19:24:16.107+02:00  INFO 22716 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:24:16.109+02:00  INFO 22716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:24:16.121+02:00  INFO 22716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T19:25:48.396+02:00  INFO 6388 --- [main] org.example.spring.Main                  : Starting Main using Java 21.0.1 with PID 6388 (C:\Users\aandr\IdeaProjects\spring-demo\target\classes started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:25:48.399+02:00  INFO 6388 --- [main] org.example.spring.Main                  : The following 1 profile is active: "web"
+2024-01-02T19:25:49.412+02:00  INFO 6388 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-01-02T19:25:49.412+02:00  INFO 6388 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.17]
+2024-01-02T19:25:49.457+02:00  INFO 6388 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-01-02T19:25:49.894+02:00  INFO 6388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:25:50.027+02:00  INFO 6388 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@113eed88
+2024-01-02T19:25:50.028+02:00  INFO 6388 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:25:51.018+02:00  INFO 6388 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:25:51.505+02:00  INFO 6388 --- [main] org.example.spring.Main                  : Started Main in 3.547 seconds (process running for 4.159)
+2024-01-02T19:25:54.324+02:00  INFO 6388 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:25:54.326+02:00  INFO 6388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:25:54.336+02:00  INFO 6388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T19:26:07.345+02:00  INFO 22792 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 22792 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T19:26:07.346+02:00  INFO 22792 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T19:26:09.235+02:00  INFO 22792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T19:26:09.476+02:00  INFO 22792 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76e6c070
+2024-01-02T19:26:09.478+02:00  INFO 22792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T19:26:10.718+02:00  INFO 22792 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T19:26:11.682+02:00  INFO 22792 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.749 seconds (process running for 5.965)
+2024-01-02T19:26:12.383+02:00  INFO 22792 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T19:26:12.386+02:00  INFO 22792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T19:26:12.395+02:00  INFO 22792 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:04:09.384+02:00  INFO 7136 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 7136 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:04:09.385+02:00  INFO 7136 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:04:11.358+02:00  INFO 7136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:04:11.616+02:00  INFO 7136 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ebd6fd6
+2024-01-02T20:04:11.617+02:00  INFO 7136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:04:13.006+02:00  INFO 7136 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:04:14.001+02:00  INFO 7136 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 5.077 seconds (process running for 6.38)
+2024-01-02T20:04:14.726+02:00  INFO 7136 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:04:14.728+02:00  INFO 7136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:04:14.735+02:00  INFO 7136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:12:15.226+02:00  INFO 13492 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 13492 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:12:15.228+02:00  INFO 13492 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:12:17.098+02:00  INFO 13492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:12:17.337+02:00  INFO 13492 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5773d271
+2024-01-02T20:12:17.340+02:00  INFO 13492 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:12:18.561+02:00  INFO 13492 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:12:19.475+02:00  INFO 13492 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.682 seconds (process running for 5.781)
+2024-01-02T20:12:20.278+02:00  INFO 13492 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:12:20.280+02:00  INFO 13492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:12:20.290+02:00  INFO 13492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:15:17.020+02:00  INFO 19444 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 19444 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:15:17.021+02:00  INFO 19444 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:15:18.893+02:00  INFO 19444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:15:19.143+02:00  INFO 19444 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6eede35e
+2024-01-02T20:15:19.145+02:00  INFO 19444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:15:20.444+02:00  INFO 19444 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:15:21.350+02:00  INFO 19444 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.703 seconds (process running for 5.88)
+2024-01-02T20:15:22.108+02:00  INFO 19444 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:15:22.110+02:00  INFO 19444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:15:22.120+02:00  INFO 19444 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:20:12.058+02:00  INFO 13220 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 13220 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:20:12.059+02:00  INFO 13220 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:20:13.986+02:00  INFO 13220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:20:14.227+02:00  INFO 13220 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@394a6d2b
+2024-01-02T20:20:14.229+02:00  INFO 13220 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:20:15.513+02:00  INFO 13220 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:20:16.498+02:00  INFO 13220 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.906 seconds (process running for 6.081)
+2024-01-02T20:20:17.239+02:00  INFO 13220 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:20:17.241+02:00  INFO 13220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:20:17.251+02:00  INFO 13220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:23:00.105+02:00  INFO 4152 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 4152 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:23:00.107+02:00  INFO 4152 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:23:02.095+02:00  INFO 4152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:23:02.364+02:00  INFO 4152 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3ce7394f
+2024-01-02T20:23:02.366+02:00  INFO 4152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:23:03.790+02:00  INFO 4152 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:23:04.753+02:00  INFO 4152 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 5.121 seconds (process running for 6.982)
+2024-01-02T20:23:05.514+02:00  INFO 4152 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:23:05.516+02:00  INFO 4152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:23:05.527+02:00  INFO 4152 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:24:48.117+02:00  INFO 4916 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 4916 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:24:48.119+02:00  INFO 4916 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:24:50.184+02:00  INFO 4916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:24:50.446+02:00  INFO 4916 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@635ff2a5
+2024-01-02T20:24:50.449+02:00  INFO 4916 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:24:51.769+02:00  INFO 4916 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:24:52.774+02:00  INFO 4916 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 5.084 seconds (process running for 6.653)
+2024-01-02T20:24:53.572+02:00  INFO 4916 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:24:53.574+02:00  INFO 4916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:24:53.584+02:00  INFO 4916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:42:39.552+02:00  INFO 14772 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 14772 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:42:39.555+02:00  INFO 14772 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:42:39.689+02:00  INFO 14772 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 0.626 seconds (process running for 1.866)
+2024-01-02T20:42:53.263+02:00  INFO 13864 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 13864 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:42:53.265+02:00  INFO 13864 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:42:53.403+02:00  INFO 13864 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 0.683 seconds (process running for 1.831)
+2024-01-02T20:43:41.042+02:00  INFO 12856 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 12856 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:43:41.044+02:00  INFO 12856 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:43:43.033+02:00  INFO 12856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:43:43.277+02:00  INFO 12856 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32a8ca06
+2024-01-02T20:43:43.279+02:00  INFO 12856 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:43:44.524+02:00  INFO 12856 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:43:45.483+02:00  INFO 12856 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.887 seconds (process running for 5.996)
+2024-01-02T20:43:46.156+02:00  INFO 12856 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:43:46.158+02:00  INFO 12856 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:43:46.169+02:00  INFO 12856 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T20:44:20.957+02:00  INFO 4084 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 4084 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T20:44:20.958+02:00  INFO 4084 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T20:44:22.853+02:00  INFO 4084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T20:44:23.152+02:00  INFO 4084 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62735b13
+2024-01-02T20:44:23.154+02:00  INFO 4084 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T20:44:24.353+02:00  INFO 4084 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T20:44:25.431+02:00  INFO 4084 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 4.903 seconds (process running for 6.061)
+2024-01-02T20:44:26.160+02:00  INFO 4084 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T20:44:26.161+02:00  INFO 4084 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T20:44:26.173+02:00  INFO 4084 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T21:02:21.723+02:00  INFO 8036 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 8036 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T21:02:21.724+02:00  INFO 8036 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T21:02:24.752+02:00  INFO 8036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T21:02:24.959+02:00  INFO 8036 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7aae1170
+2024-01-02T21:02:24.963+02:00  INFO 8036 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T21:02:26.303+02:00  INFO 8036 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T21:02:28.199+02:00  INFO 8036 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 6.911 seconds (process running for 8.187)
+2024-01-02T21:02:28.887+02:00  INFO 8036 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T21:02:28.890+02:00  INFO 8036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T21:02:28.902+02:00  INFO 8036 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-02T21:13:59.090+02:00  INFO 11380 --- [main] o.e.s.repository.CompanyRepositoryTest   : Starting CompanyRepositoryTest using Java 21.0.1 with PID 11380 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-02T21:13:59.091+02:00  INFO 11380 --- [main] o.e.s.repository.CompanyRepositoryTest   : The following 1 profile is active: "web"
+2024-01-02T21:14:01.226+02:00  INFO 11380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-02T21:14:01.469+02:00  INFO 11380 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@570b2057
+2024-01-02T21:14:01.472+02:00  INFO 11380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-02T21:14:03.294+02:00  INFO 11380 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-02T21:14:04.670+02:00  INFO 11380 --- [main] o.e.s.repository.CompanyRepositoryTest   : Started CompanyRepositoryTest in 6.072 seconds (process running for 7.307)
+2024-01-02T21:14:05.515+02:00  INFO 11380 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-02T21:14:05.517+02:00  INFO 11380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-02T21:14:05.529+02:00  INFO 11380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
