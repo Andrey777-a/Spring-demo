@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @RequiredArgsConstructor
 class CompanyRepositoryTest {
 
-    @Autowired
+
     private final CompanyRepository companyRepository;
     /*@Autowired
     public CompanyRepositoryTest(CompanyRepository companyRepository) {
@@ -28,7 +28,7 @@ class CompanyRepositoryTest {
 
     @Test
     void checkCompanyName() {
-        var byId = companyRepository.findByName("google");
+        var byId = companyRepository.findByName("Google");
         assertTrue(byId.isPresent());
 
     }
