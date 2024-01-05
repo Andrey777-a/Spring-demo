@@ -2,6 +2,9 @@ package org.example.spring.model.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.NotAudited;
+import org.hibernate.envers.RelationTargetAuditMode;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -14,8 +17,9 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
 @Table(name = "users")
-public class User extends AbstractEntity<Long> {
+public class User extends AuditEntity<Long> {
 
     @Column(unique = true, nullable = false)
     private String username;
@@ -34,6 +38,7 @@ public class User extends AbstractEntity<Long> {
     @ManyToOne(fetch = FetchType.LAZY)
     private Company company;
 
+    @NotAudited
     @Builder.Default
     @OneToMany(mappedBy = "user")
     private List<UserChat> userChats = new ArrayList<>();
