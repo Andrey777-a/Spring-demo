@@ -1,31 +1,23 @@
-package org.example.spring.repository;
+package org.example.spring.integration.repository;
 
 import lombok.RequiredArgsConstructor;
-import org.example.spring.annotation.IT;
+import org.example.spring.IntegrationTestBase;
+import org.example.spring.integration.repository.annotation.IT;
 import org.example.spring.model.entity.Company;
-import org.junit.jupiter.api.Assertions;
+import org.example.spring.repository.CompanyRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.annotation.Commit;
 
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@IT
 @RequiredArgsConstructor
-class CompanyRepositoryTest {
+class CompanyRepositoryTest extends IntegrationTestBase {
 
 
     private final CompanyRepository companyRepository;
-    /*@Autowired
-    public CompanyRepositoryTest(CompanyRepository companyRepository) {
-        this.companyRepository = companyRepository;
-    }*/
-
 
     @Test
-//    @Commit
     void checkAuditCompany(){
         var company = Company.builder().name("test5")
                 .companyLocales(Map.of(

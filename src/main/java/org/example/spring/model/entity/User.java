@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@ToString(exclude = "userChats")
+//@ToString(exclude = "userChats")
 @EqualsAndHashCode(callSuper = true)
 @Data
 @Builder
@@ -44,4 +44,17 @@ public class User extends AuditEntity<Long> {
     private List<UserChat> userChats = new ArrayList<>();
 
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", birthdate=" + birthdate +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", role=" + role +
+                ", company=" + company +
+                ", createdAt=" + getCreatedAt() +
+                ", modifiedAt=" + getModifiedAt() +
+                '}';
+    }
 }

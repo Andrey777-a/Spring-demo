@@ -13,9 +13,9 @@ logging:
     root: info
     org.springframework: ERROR
     org.hibernate: ERROR
-  file:
-    name: log/test.log
-    path: /
+#  file:
+#    name: log/test.log
+#    path: /
 
 spring:
   datasource:
@@ -30,6 +30,7 @@ spring:
         show_sql: true
         hbm2ddl:
           auto: validate
+#        default_batch_fetch_size: 50
 #        dialect:
 #    hibernate:
 #      ddl-auto: validate

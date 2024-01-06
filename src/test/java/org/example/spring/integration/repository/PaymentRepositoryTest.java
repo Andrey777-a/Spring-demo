@@ -1,18 +1,16 @@
-package org.example.spring.repository;
+package org.example.spring.integration.repository;
 
 import lombok.RequiredArgsConstructor;
-import org.example.spring.annotation.IT;
-import org.example.spring.model.entity.Payment;
+import org.example.spring.IntegrationTestBase;
+import org.example.spring.integration.repository.annotation.IT;
+import org.example.spring.repository.PaymentRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-@IT
 @RequiredArgsConstructor
-class PaymentRepositoryTest {
+class PaymentRepositoryTest extends IntegrationTestBase {
 
     private final PaymentRepository paymentRepository;
 

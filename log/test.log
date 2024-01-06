@@ -68,3 +68,14 @@
 2024-01-06T12:21:27.011+02:00  INFO 10432 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
 2024-01-06T12:21:27.013+02:00  INFO 10432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-01-06T12:21:27.022+02:00  INFO 10432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-01-06T12:35:06.827+02:00  INFO 1996 --- [main] o.e.s.repository.UserRepositoryTest      : Starting UserRepositoryTest using Java 21.0.1 with PID 1996 (started by aandr in C:\Users\aandr\IdeaProjects\spring-demo)
+2024-01-06T12:35:06.829+02:00  INFO 1996 --- [main] o.e.s.repository.UserRepositoryTest      : The following 1 profile is active: "test"
+2024-01-06T12:35:12.803+02:00  INFO 1996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-06T12:35:15.518+02:00  INFO 1996 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49122853
+2024-01-06T12:35:15.526+02:00  INFO 1996 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-06T12:35:23.029+02:00  INFO 1996 --- [main] org.example.spring.ConnectionPool        : init
+2024-01-06T12:35:40.696+02:00  INFO 1996 --- [main] o.e.s.repository.UserRepositoryTest      : Started UserRepositoryTest in 34.386 seconds (process running for 35.797)
+2024-01-06T12:36:17.559+02:00  WARN 1996 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s919ms872µs).
+2024-01-06T12:36:17.671+02:00  INFO 1996 --- [SpringApplicationShutdownHook] org.example.spring.ConnectionPool        : destroy
+2024-01-06T12:36:17.674+02:00  INFO 1996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-01-06T12:36:17.687+02:00  INFO 1996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

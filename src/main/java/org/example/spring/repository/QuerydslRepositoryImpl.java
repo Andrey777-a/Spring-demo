@@ -1,12 +1,12 @@
 package org.example.spring.repository;
 
 import com.querydsl.jpa.impl.JPAQuery;
-import com.querydsl.jpa.impl.JPAUpdateClause;
 import jakarta.persistence.EntityManager;
 import lombok.RequiredArgsConstructor;
 import org.example.spring.model.dto.UserFilter;
 import org.example.spring.model.entity.User;
 import org.example.spring.querydsl.QPredicate;
+
 import java.util.List;
 
 import static org.example.spring.model.entity.QUser.user;
