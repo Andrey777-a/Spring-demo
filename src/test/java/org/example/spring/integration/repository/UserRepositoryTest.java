@@ -13,15 +13,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.history.Revision;
 import org.springframework.test.annotation.Commit;
 
 import java.time.LocalDate;
-import java.util.Optional;
 
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
-//@IT
 @RequiredArgsConstructor
 class UserRepositoryTest extends IntegrationTestBase {
 
@@ -47,9 +45,7 @@ class UserRepositoryTest extends IntegrationTestBase {
     }
 
 
-    //    @Commit
     @Test
-//    @Disabled
     void checkUpdateAuditUsers() {
 
         var user = userRepository.findById(1L).get();
@@ -64,7 +60,6 @@ class UserRepositoryTest extends IntegrationTestBase {
 
 
     }
-
     @Commit
     @Test
     void checkCreatedAuditUsers() {
@@ -72,7 +67,7 @@ class UserRepositoryTest extends IntegrationTestBase {
         var company = companyRepository.findById(1).get();
 
         var user = User.builder()
-                .username("Test8@Gmail.com")
+                .username("Test9@Gmail.com")
                 .firstname("Ivan")
                 .lastname("Sidorov")
                 .birthdate(LocalDate.of(2001, 1, 30))
@@ -82,8 +77,10 @@ class UserRepositoryTest extends IntegrationTestBase {
 
         userRepository.saveAndFlush(user);
 
-        var byId = userRepository.findById(4L);
+        var byId = userRepository.findById(6L);
         Assertions.assertTrue(byId.isPresent());
+
+        assertNotNull(byId.get().getCreatedAt());
 
     }
 
@@ -103,7 +100,7 @@ class UserRepositoryTest extends IntegrationTestBase {
 
         var id2 = userRepository.findById(1L).get();
 
-        Assertions.assertNotNull(id2.getModifiedAt());
+        assertNotNull(id2.getModifiedAt());
 
         System.out.println();
     }

@@ -22,6 +22,7 @@
         <lombok.version>1.18.30</lombok.version>
         <querydsl.version>5.0.0</querydsl.version>
         <testcontainers.version>1.19.3</testcontainers.version>
+        <liquibase.version>4.25.0</liquibase.version>
     </properties>
 
 
@@ -85,6 +86,13 @@
                 <version>${testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.liquibase/liquibase-core -->
+            <dependency>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-core</artifactId>
+                <version>${liquibase.version}</version>
+            </dependency>
+
         </dependencies>
 
     <build>

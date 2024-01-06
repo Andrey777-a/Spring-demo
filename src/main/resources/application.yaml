@@ -28,8 +28,7 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
-        hbm2ddl:
-          auto: validate
+        hbm2ddl.auto: validate
 #        default_batch_fetch_size: 50
 #        dialect:
 #    hibernate:

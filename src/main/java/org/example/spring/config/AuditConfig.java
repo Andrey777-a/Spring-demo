@@ -1,6 +1,6 @@
 package org.example.spring.config;
 
-import org.example.spring.Main;
+import org.example.spring.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import java.util.Optional;
 
 @EnableJpaAuditing
-@EnableEnversRepositories(basePackageClasses = Main.class)
+@EnableEnversRepositories(basePackageClasses = ApplicationRunner.class)
 @Configuration
 public class AuditConfig {
 

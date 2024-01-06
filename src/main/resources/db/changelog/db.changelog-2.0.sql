@@ -1,8 +1,12 @@
+--liquibase formatted sql
+
+--changeset andrew:1
 INSERT INTO company (name)
 VALUES ('Google'),
        ('Meta'),
        ('Amazon');
 
+--changeset andrew:2
 INSERT INTO company_locales (company_id, lang, description)
 VALUES ((SELECT id FROM company WHERE name = 'Google'), 'en', 'Google description'),
        ((SELECT id FROM company WHERE name = 'Google'), 'ru', 'Google описание'),
@@ -11,6 +15,7 @@ VALUES ((SELECT id FROM company WHERE name = 'Google'), 'en', 'Google descriptio
        ((SELECT id FROM company WHERE name = 'Amazon'), 'en', 'Amazon description'),
        ((SELECT id FROM company WHERE name = 'Amazon'), 'ru', 'Amazon описание');
 
+--changeset andrew:3
 INSERT INTO users (birth_date, firstname, lastname, role, username, company_id)
 VALUES ('1990-01-10', 'Ivan', 'Ivanov', 'ADMIN', 'ivan@gmail.com', (SELECT id FROM company WHERE name = 'Google')),
        ('1995-10-19', 'Petr', 'Petrov', 'USER', 'petr@gmail.com', (SELECT id FROM company WHERE name = 'Google')),
@@ -18,6 +23,7 @@ VALUES ('1990-01-10', 'Ivan', 'Ivanov', 'ADMIN', 'ivan@gmail.com', (SELECT id FR
        ('1984-03-14', 'Vlad', 'Vladikov', 'USER', 'vlad@gmail.com', (SELECT id FROM company WHERE name = 'Amazon')),
        ('1984-03-14', 'Kate', 'Smith', 'ADMIN', 'kate@gmail.com', (SELECT id FROM company WHERE name = 'Amazon'));
 
+--changeset andrew:4
 INSERT INTO payment (amount, receiver_id)
 VALUES (100, (SELECT id FROM users WHERE username = 'ivan@gmail.com')),
        (300, (SELECT id FROM users WHERE username = 'ivan@gmail.com')),
@@ -34,11 +40,13 @@ VALUES (100, (SELECT id FROM users WHERE username = 'ivan@gmail.com')),
        (510, (SELECT id FROM users WHERE username = 'kate@gmail.com')),
        (630, (SELECT id FROM users WHERE username = 'kate@gmail.com'));
 
+--changeset andrew:5
 INSERT INTO chat (name)
 VALUES ('dmdev'),
        ('java'),
        ('database');
 
+--changeset andrew:6
 INSERT INTO users_chat(user_id, chat_id)
 VALUES ((SELECT id FROM users WHERE username = 'ivan@gmail.com'), (SELECT id FROM chat WHERE name = 'dmdev')),
        ((SELECT id FROM users WHERE username = 'petr@gmail.com'), (SELECT id FROM chat WHERE name = 'dmdev')),

@@ -12,4 +12,8 @@ spring:
         format_sql: true
         show_sql: true
         hbm2ddl:
-          auto: update
+          auto: validate
+
+
+#    user: admin
+#    password: pass
