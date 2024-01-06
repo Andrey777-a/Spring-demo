@@ -1,12 +1,11 @@
 package org.example.spring.config;
 
 
-import lombok.extern.slf4j.Slf4j;
 import org.example.spring.ConnectionPool;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.context.annotation.*;
-
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 @Import(WebConfigApplication.class)
 //@Profile("prod")
 @Configuration

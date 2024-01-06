@@ -8,6 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
 import org.springframework.data.repository.history.RevisionRepository;
 import org.springframework.stereotype.Repository;
 
@@ -16,7 +17,8 @@ import java.util.List;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>,
-                                        RevisionRepository<User, Long, Integer> {
+                                        RevisionRepository<User, Long, Integer>,
+                                        QuerydslPredicateExecutor<User>  {
 
     @Query("select u from User u join fetch u.company where u.username like %:username%")
     List<User> findBy(String username);

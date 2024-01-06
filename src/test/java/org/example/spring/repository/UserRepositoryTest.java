@@ -1,9 +1,13 @@
 package org.example.spring.repository;
 
+import com.querydsl.core.types.Predicate;
 import lombok.RequiredArgsConstructor;
 import org.example.spring.annotation.IT;
+import org.example.spring.model.entity.Company;
+import org.example.spring.model.entity.QUser;
 import org.example.spring.model.entity.Role;
 import org.example.spring.model.entity.User;
+import org.example.spring.querydsl.QPredicate;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -11,7 +15,9 @@ import org.springframework.data.domain.Sort;
 import org.springframework.test.annotation.Commit;
 
 import java.time.LocalDate;
+import java.util.Map;
 
+import static org.example.spring.model.entity.QUser.user;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
 @IT
@@ -21,28 +27,48 @@ class UserRepositoryTest {
     private final UserRepository userRepository;
     private final CompanyRepository companyRepository;
 
-    @Commit
+    @Test
+    void checkFindUserQuerydsl(){
+
+        var predicate = QPredicate.builder()
+                .add("Ivan", user.firstname::containsIgnoreCase)
+                .add("kate@gmail.com", user.username::containsIgnoreCase)
+                .buildOr();
+        var predicate2 = QPredicate.builder()
+                .add("Ivan", user.firstname::containsIgnoreCase)
+                .add("kate@gmail.com", user.username::containsIgnoreCase)
+                .build();
+
+        var all = userRepository.findAll(predicate);
+
+        all.forEach(System.out::println);
+
+    }
+
+
+//    @Commit
     @Test
     void checkUpdateAuditUsers(){
 
-        var id = userRepository.findById(24L).get();
+        var user = userRepository.findById(24L).get();
 
-        id.setLastname("Sidorov2");
+        user.setLastname("Sidorov3");
+        userRepository.save(user);
 
-        userRepository.save(id);
+
         System.out.println();
 
 
     }
 
-    @Commit
+//    @Commit
     @Test
     void checkCreatedAuditUsers(){
 
         var company = companyRepository.findById(1).get();
 
         var user = User.builder()
-                .username("Test5@Gmail.com")
+                .username("Test8@Gmail.com")
                 .firstname("Ivan")
                 .lastname("Sidorov")
                 .birthdate(LocalDate.of(2001, 1, 30))
