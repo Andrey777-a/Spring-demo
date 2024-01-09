@@ -1,7 +1,7 @@
 package org.example.spring.config;
 
 
-import org.example.spring.ConnectionPool;
+import org.example.spring.bpp.ConnectionPool;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

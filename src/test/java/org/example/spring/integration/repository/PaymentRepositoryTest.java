@@ -2,7 +2,6 @@ package org.example.spring.integration.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.example.spring.IntegrationTestBase;
-import org.example.spring.integration.repository.annotation.IT;
 import org.example.spring.repository.PaymentRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;

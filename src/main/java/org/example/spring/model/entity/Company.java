@@ -25,6 +25,10 @@ public class Company extends AbstractEntity<Integer> {
     @Column(name = "name", nullable = false)
     private String name;
 
+    public Company(String name) {
+        this.name = name;
+    }
+
     @NotAudited
     @Builder.Default
     @ElementCollection

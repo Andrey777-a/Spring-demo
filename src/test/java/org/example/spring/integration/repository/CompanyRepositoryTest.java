@@ -2,7 +2,6 @@ package org.example.spring.integration.repository;
 
 import lombok.RequiredArgsConstructor;
 import org.example.spring.IntegrationTestBase;
-import org.example.spring.integration.repository.annotation.IT;
 import org.example.spring.model.entity.Company;
 import org.example.spring.repository.CompanyRepository;
 import org.junit.jupiter.api.Test;

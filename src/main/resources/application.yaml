@@ -7,12 +7,11 @@ db:
   hosts: localhost,127.0.0.1
 
 spring.profiles.active: web
-
 logging:
   level:
     root: info
-    org.springframework: ERROR
-    org.hibernate: ERROR
+    org.springframework: info
+    org.hibernate: info
 #  file:
 #    name: log/test.log
 #    path: /
@@ -29,7 +28,8 @@ spring:
         format_sql: true
         show_sql: true
         hbm2ddl.auto: validate
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
 #        default_batch_fetch_size: 50
-#        dialect:
-#    hibernate:
-#      ddl-auto: validate

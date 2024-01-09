@@ -1,7 +1,7 @@
 package org.example.spring.integration.repository;
 
 import lombok.RequiredArgsConstructor;
-import org.example.spring.integration.repository.annotation.IT;
+import org.example.spring.integration.annotation.IT;
 import org.example.spring.model.entity.Role;
 import org.example.spring.model.entity.User;
 import org.example.spring.repository.CompanyRepository;

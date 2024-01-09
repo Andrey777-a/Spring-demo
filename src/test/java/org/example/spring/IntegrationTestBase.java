@@ -1,6 +1,6 @@
 package org.example.spring;
 
-import org.example.spring.integration.repository.annotation.IT;
+import org.example.spring.integration.annotation.IT;
 import org.junit.jupiter.api.BeforeAll;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;

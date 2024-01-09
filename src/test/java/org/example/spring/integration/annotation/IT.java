@@ -1,4 +1,4 @@
-package org.example.spring.integration.repository.annotation;
+package org.example.spring.integration.annotation;
 
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
