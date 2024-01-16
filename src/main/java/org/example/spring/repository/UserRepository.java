@@ -14,6 +14,7 @@ import java.util.List;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>,
+                                        QuerydslRepository,
                                         RevisionRepository<User, Long, Integer>,
                                         QuerydslPredicateExecutor<User>  {
 

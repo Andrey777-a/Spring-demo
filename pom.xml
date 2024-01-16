@@ -67,6 +67,13 @@
                 <version>${spring.starter.version}</version>
                 <scope>test</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${spring.starter.version}</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-envers -->
             <dependency>
                 <groupId>org.springframework.data</groupId>

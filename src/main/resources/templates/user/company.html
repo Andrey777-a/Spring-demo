@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+</head>
+<body>
+<p th:action="@{/companies/{companyId}(companyId=${company.id})}"
+   th:text="|${company.id}. ${company.name}|"> Company name</p>
+
+<form th:action="@{/companies/{companyId}/delete(companyId=${company.id})}" method="post">
+    <button type="submit">Remove</button>
+</form>
+</body>
+</html>

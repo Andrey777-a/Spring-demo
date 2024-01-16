@@ -9,9 +9,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import static org.example.spring.http.util.Utils.COMPANIES_VIEW_PAGE;
+import static org.example.spring.http.util.Utils.COMPANY_VIEW_PAGE;
+
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/companys")
+@RequestMapping("/companies")
 public class CompanyController {
 
     private final CompanyService companyService;
@@ -19,9 +22,9 @@ public class CompanyController {
 
     @GetMapping
     public String findAll(Model model){
-        model.addAttribute("company", companyService.findAll());
+        model.addAttribute("companies", companyService.findAll());
 
-        return "companys";
+        return COMPANIES_VIEW_PAGE;
     }
 
 
@@ -32,7 +35,7 @@ public class CompanyController {
                 .map(
                         company -> {
                             model.addAttribute("company", company);
-                            return "companys/company";
+                            return COMPANY_VIEW_PAGE;
                         }
                 ).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
@@ -41,7 +44,7 @@ public class CompanyController {
     @ResponseStatus(HttpStatus.CREATED)
     public String create(CompanyCreateEditDto companyDto){
 
-        return "redirect:companys " + companyService.create(companyDto).id();
+        return "redirect:/companies/" + companyService.create(companyDto).id();
     }
 
 //    @DeleteMapping("/{id}")
@@ -50,7 +53,7 @@ public class CompanyController {
         if(!companyService.delete(id)){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
-        return "redirect:company";
+        return "redirect:/companies";
     }
 
 }

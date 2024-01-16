@@ -17,19 +17,23 @@ logging:
 #    path: /
 
 spring:
+
   datasource:
     url: jdbc:postgresql://localhost:5433/spring-demo
     username: admin
     password: pass
     driver-class-name: org.postgresql.Driver
   jpa:
+    open-in-view: false
     properties:
       hibernate:
         format_sql: true
         show_sql: true
         hbm2ddl.auto: validate
   mvc:
-    view:
-      suffix: .jsp
-      prefix: /WEB-INF/jsp/
+#    view:
+#      suffix: .jsp
+#      prefix: /WEB-INF/jsp/
+    format:
+      date: iso
 #        default_batch_fetch_size: 50

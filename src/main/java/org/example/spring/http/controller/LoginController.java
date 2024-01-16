@@ -7,24 +7,24 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("/api/v1")
+@RequestMapping("/login")
 @Controller
 public class LoginController {
 
 
-    @GetMapping("/login")
+    @GetMapping()
     public String loginPage(){
         return "/user/login";
     }
 
 
-    @PostMapping("/login")
+    @PostMapping()
     public String login(Model model, LoginReadDto loginReadDto){
         var dto = model.getAttribute("loginReadDto");
         System.out.println(dto);
-        //        return "forward:/WEB-INF/jsp/user/login.jsp";
+        //        return "forward:/WEB-INF/jsp/user/login.html";
 //        return "redirect:https://google.com";
-        return "redirect:/api/v1/login";
+        return "redirect:/login";
     }
 
 }

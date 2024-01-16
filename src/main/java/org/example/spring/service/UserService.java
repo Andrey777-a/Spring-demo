@@ -4,7 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.example.spring.mapper.UserCreateEditMapper;
 import org.example.spring.mapper.UserReadMapper;
 import org.example.spring.model.dto.UserCreateEditDto;
+import org.example.spring.model.dto.UserFilter;
 import org.example.spring.model.dto.UserReadDto;
+import org.example.spring.repository.QuerydslRepository;
 import org.example.spring.repository.UserRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,6 +23,11 @@ public class UserService {
     private final UserReadMapper userReadMapper;
     private final UserCreateEditMapper userCreateEditMapper;
 
+    public List<UserReadDto> findAll(UserFilter userFilter) {
+        return userRepository.findAllByFilter(userFilter).stream()
+                .map(userReadMapper::map)
+                .toList();
+    }
     public List<UserReadDto> findAll() {
         return userRepository.findAll().stream()
                 .map(userReadMapper::map)
