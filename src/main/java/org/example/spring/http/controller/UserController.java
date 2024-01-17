@@ -4,7 +4,6 @@ import jakarta.validation.groups.Default;
 import lombok.RequiredArgsConstructor;
 import org.example.spring.model.dto.UserCreateEditDto;
 import org.example.spring.model.dto.UserFilter;
-import org.example.spring.model.dto.UserReadDto;
 import org.example.spring.model.entity.Role;
 import org.example.spring.service.CompanyService;
 import org.example.spring.service.UserService;
@@ -18,10 +17,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.springframework.web.servlet.view.RedirectView;
-
-import javax.xml.bind.annotation.XmlType;
-import java.util.List;
 
 import static org.example.spring.http.util.Utils.USERS_VIEW_PAGE;
 import static org.example.spring.http.util.Utils.USER_VIEW_PAGE;
@@ -29,7 +24,6 @@ import static org.example.spring.http.util.Utils.USER_VIEW_PAGE;
 @RequiredArgsConstructor
 @RequestMapping("/users")
 @Controller
-//@RestController
 public class UserController {
 
     private final UserService userService;

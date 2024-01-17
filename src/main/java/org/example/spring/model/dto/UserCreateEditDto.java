@@ -5,6 +5,7 @@ import lombok.Value;
 import org.example.spring.model.entity.Role;
 import org.example.spring.validation.UserInfo;
 import org.example.spring.validation.group.CreateAction;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
 
@@ -25,5 +26,5 @@ public class UserCreateEditDto {
     String lastname;
     Role role;
     Integer companyId;
-
+    MultipartFile image;
 }

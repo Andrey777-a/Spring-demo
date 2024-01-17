@@ -16,6 +16,8 @@ CREATE TABLE IF NOT EXISTS users_aud
     birth_date DATE,
     firstname VARCHAR(64),
     lastname VARCHAR(64),
+    image VARCHAR(64),
+    image_path VARCHAR(500),
     role VARCHAR(32),
     company_id INT
     );

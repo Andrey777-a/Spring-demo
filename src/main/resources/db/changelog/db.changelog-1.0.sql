@@ -22,6 +22,8 @@ CREATE TABLE IF NOT EXISTS users
     birth_date DATE,
     firstname VARCHAR(64),
     lastname VARCHAR(64),
+    image VARCHAR(64),
+    image_path VARCHAR(500),
     role VARCHAR(32),
     created_at TIMESTAMP,
     modified_at TIMESTAMP,

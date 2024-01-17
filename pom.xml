@@ -23,6 +23,7 @@
         <querydsl.version>5.0.0</querydsl.version>
         <testcontainers.version>1.19.3</testcontainers.version>
         <liquibase.version>4.25.0</liquibase.version>
+        <springdoc.swagger.version>2.2.0</springdoc.swagger.version>
     </properties>
 
 
@@ -86,6 +87,14 @@
                 <artifactId>spring-data-envers</artifactId>
                 <version>${spring.starter.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-starter-webmvc-ui -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.swagger.version}</version>
+            </dependency>
+
+
             <!-- https://mvnrepository.com/artifact/com.querydsl/querydsl-jpa -->
             <dependency>
                 <groupId>com.querydsl</groupId>

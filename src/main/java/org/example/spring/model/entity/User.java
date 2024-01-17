@@ -31,6 +31,10 @@ public class User extends AuditEntity<Long> {
 
     private String lastname;
 
+    private String image;
+    @Column(name = "image_path")
+    private String imagePath;
+
     @Enumerated(EnumType.STRING)
     private Role role;
 
