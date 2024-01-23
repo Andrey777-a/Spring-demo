@@ -6,7 +6,9 @@ import org.example.spring.model.entity.Company;
 import org.example.spring.model.entity.User;
 import org.example.spring.repository.CompanyRepository;
 import org.example.spring.service.ImageService;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.nio.file.Path;
@@ -22,6 +24,7 @@ public class UserCreateEditMapper implements Mapper<UserCreateEditDto, User> {
 
     private final CompanyRepository companyRepository;
     private final ImageService imageService;
+    private final PasswordEncoder passwordEncoder;
 
     @Override
     public User map(UserCreateEditDto fromObject, User toObject) {
@@ -44,6 +47,12 @@ public class UserCreateEditMapper implements Mapper<UserCreateEditDto, User> {
         user.setBirthdate(object.getBirthdate());
         user.setRole(object.getRole());
         user.setCompany(getCompany(object.getCompanyId()));
+
+        Optional.ofNullable(object.getPassword())
+                .filter(StringUtils::hasText)
+                .map(passwordEncoder::encode)
+                .ifPresent(user::setPassword);
+
 
         Optional.ofNullable(object.getImage())
                 .filter(not(MultipartFile::isEmpty))

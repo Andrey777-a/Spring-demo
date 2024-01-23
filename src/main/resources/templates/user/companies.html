@@ -5,6 +5,7 @@
     <title>Companies</title>
 </head>
 <body>
+<div th:insert="~{fragment :: heder}"></div><br>
 <div th:each="company : ${companies}">
 <a th:href="@{'/companies/' + ${company.id}}" th:text="|${company.id}. ${company.name}|">Company</a>
 </div>

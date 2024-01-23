@@ -11,6 +11,7 @@ import org.springframework.data.repository.history.RevisionRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>,
@@ -26,6 +27,7 @@ public interface UserRepository extends JpaRepository<User, Long>,
     @Query("update User u set u.role = :role where u.id in (:ids)")
     void updateRoleBy(Role role, Long ... ids);
 
+    Optional<User> findByUsername(String username);
 
     List<User> findAllBy(Pageable pageable);
 

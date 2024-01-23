@@ -24,6 +24,8 @@ public class User extends AuditEntity<Long> {
     @Column(unique = true, nullable = false)
     private String username;
 
+    private String password;
+
     @Column(name = "birth_date")
     private LocalDate birthdate;
 

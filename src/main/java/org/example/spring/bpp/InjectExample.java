@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class InjectExample {
 
-    @Inject
+//    @Inject
     ConnectionPool connectionPool;
 
 }

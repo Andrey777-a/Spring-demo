@@ -10,6 +10,11 @@ import org.example.spring.service.UserService;
 import org.example.spring.validation.group.CreateAction;
 import org.example.spring.validation.group.UpdateAction;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.annotation.CurrentSecurityContext;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -44,6 +49,7 @@ public class UserController {
     }*/
 
     @GetMapping("/{id}")
+//    @PreAuthorize("hasAuthority('ADMIN')")
     public String findById(@PathVariable("id") Long id, Model model){
        return userService.findById(id)
                 .map(
@@ -74,7 +80,8 @@ public class UserController {
         redirectAttributes.addFlashAttribute("errors", bindingResult.getAllErrors());
         return "redirect:/users/registration";
         }
-        return "redirect:/users/" + userService.create(user).getId();
+        userService.create(user);
+        return "redirect:/login";
     }
 
 //    @PutMapping("/{id}")

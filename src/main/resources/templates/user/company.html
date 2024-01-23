@@ -5,6 +5,8 @@
     <title>Company</title>
 </head>
 <body>
+<div th:insert="~{fragment :: heder}"></div><br>
+
 <p th:action="@{/companies/{companyId}(companyId=${company.id})}"
    th:text="|${company.id}. ${company.name}|"> Company name</p>
 

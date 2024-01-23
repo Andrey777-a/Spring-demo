@@ -14,10 +14,10 @@ import org.springframework.context.annotation.Import;
 public class ApplicationConfig {
 
 
-    @Bean("pool")
-    public ConnectionPool connectionPool(@Value("${db.name}") String name,
-                                         @Value("${db.pool.size}") Integer pool){
-        return new ConnectionPool(name, pool);
-    }
+//    @Bean("pool")
+//    public ConnectionPool connectionPool(@Value("${db.name}") String name,
+//                                         @Value("${db.pool.size}") Integer pool){
+//        return new ConnectionPool(name, pool);
+//    }
 
 }

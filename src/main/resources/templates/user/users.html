@@ -5,14 +5,15 @@
     <title>Users</title>
 </head>
 <body>
+<div th:insert="~{fragment :: heder}"></div>
 <form action="/users">
-    <label for="firstname">Firstname:
+    <label for="firstname"><span th:text="#{user.firstname}">Firstname:</span>
         <input id="firstname" type="text" name="firstname" th:value="${userFilter.firstname()}">
     </label>
-    <label for="lastname">Lastname:
+    <label for="lastname"><span th:text="#{user.lastname}">Lastname:</span>
         <input id="lastname" type="text" name="lastname" th:value="${userFilter.lastname()}" >
     </label>
-    <button type="submit">Filter</button>
+    <button type="submit"> <span th:text="#{user.filter}">Filter</span></button>
 </form>
 <div th:each="user : ${users}">
 <a th:href="@{'/users/' + ${user.id}}" th:text="|${user.id}. ${user.username}|">User</a>

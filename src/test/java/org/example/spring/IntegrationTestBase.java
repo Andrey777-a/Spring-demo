@@ -1,7 +1,9 @@
 package org.example.spring;
 
 import org.example.spring.integration.annotation.IT;
+import org.example.spring.model.entity.Role;
 import org.junit.jupiter.api.BeforeAll;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;
@@ -10,6 +12,7 @@ import org.testcontainers.containers.PostgreSQLContainer;
 //        "classpath:sql/init.sql", "classpath:sql/data.sql"
 //})
 @IT
+@WithMockUser(username = "test@gmail.com", password = "test", authorities = {"ADMIN", "USER"})
 public abstract class IntegrationTestBase {
 
     private final static PostgreSQLContainer<?> container =
