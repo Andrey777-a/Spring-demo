@@ -181,7 +181,13 @@
                     </execution>
                 </executions>
             </plugin>
-
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>org.example.spring.ApplicationRunner</mainClass>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>

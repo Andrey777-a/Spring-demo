@@ -1,31 +1,15 @@
-db:
-  name: oracle
-  password: pass
-  pool:
-    - size: 12
-  driver: PostgresDriver
-  url: postgres:5432
-  hosts: localhost,127.0.0.1
-  pools:
-    - size: 1
-      timeout: 1
-    - size: 2
-      timeout: 2
-    - size: 3
-      timeout: 3
-
 logging:
   level:
     root: info
     org.springframework: info
     org.hibernate: info
+    org.thymeleaf: info
 #  file:
 #    name: log/test.log
 #    path: /
-
 spring:
-#  profiles:
-#    active: web
+  profiles:
+    active: production
   datasource:
     url: jdbc:postgresql://localhost:5433/spring-demo
     username: admin

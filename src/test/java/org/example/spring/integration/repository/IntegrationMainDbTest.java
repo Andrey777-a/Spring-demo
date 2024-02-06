@@ -1,6 +1,7 @@
 package org.example.spring.integration.repository;
 
 import lombok.RequiredArgsConstructor;
+import org.example.spring.IntegrationTestBase;
 import org.example.spring.integration.annotation.IT;
 import org.example.spring.model.entity.Role;
 import org.example.spring.model.entity.User;
@@ -14,9 +15,9 @@ import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@IT
+//@IT
 @RequiredArgsConstructor
-public class IntegrationMainDbTest {
+public class IntegrationMainDbTest extends IntegrationTestBase {
 
     private final UserRepository userRepository;
     private final CompanyRepository companyRepository;
@@ -38,7 +39,7 @@ public class IntegrationMainDbTest {
 
         userRepository.saveAndFlush(user);
 
-        var byId = userRepository.findById(15L);
+        var byId = userRepository.findById(user.getId());
         assertTrue(byId.isPresent());
 
         assertNotNull(byId.get().getCreatedAt());

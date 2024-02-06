@@ -7,6 +7,8 @@ import org.example.spring.model.dto.UserReadDto;
 import org.example.spring.model.entity.Role;
 import org.example.spring.service.UserService;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -27,7 +29,7 @@ public class UserServiceIT extends IntegrationTestBase {
     @Test
     void findAll() {
         List<UserReadDto> result = userService.findAll();
-        assertThat(result).hasSize(5);
+        assertThat(result).hasSize(6);
     }
 
     @Test
@@ -41,11 +43,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void create() {
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "Test",
                 LocalDate.now(),
                 "Test",
-                "Test",
+                "Test2",
                 Role.ADMIN,
-                COMPANY_1
+                COMPANY_1,
+                new MockMultipartFile("test", new byte[0])
         );
         UserReadDto actualResult = userService.create(userDto);
 
@@ -61,11 +65,13 @@ public class UserServiceIT extends IntegrationTestBase {
     void update() {
         UserCreateEditDto userDto = new UserCreateEditDto(
                 "test@gmail.com",
+                "Test",
                 LocalDate.now(),
                 "Test",
-                "Test",
+                "Test2",
                 Role.ADMIN,
-                COMPANY_1
+                COMPANY_1,
+                new MockMultipartFile("test", new byte[0])
         );
 
         Optional<UserReadDto> actualResult = userService.update(USER_1, userDto);

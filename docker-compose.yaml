@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres
+    container_name: spring-database
+    environment:
+      POSTGRES_DB: spring-database
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+
+  spring-app:
+    container_name: spring-app
+    build: .
+      #context: ./docker
+      #dockerfile: Dockerfile
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/spring-database
+      SPRING_DATASOURCE_USERNAME: admin
+      SPRING_DATASOURCE_PASSWORD: pass
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    command: java -jar spring-demo-1.0-SNAPSHOT.jar #--spring.profiles.active=dev
+#    command: ["java", "-jar", "spring-demo-1.0-SNAPSHOT.jar"]
+    restart: unless-stopped

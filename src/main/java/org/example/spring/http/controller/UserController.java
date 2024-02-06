@@ -1,5 +1,7 @@
 package org.example.spring.http.controller;
 
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.groups.Default;
 import lombok.RequiredArgsConstructor;
 import org.example.spring.model.dto.UserCreateEditDto;
@@ -9,6 +11,7 @@ import org.example.spring.service.CompanyService;
 import org.example.spring.service.UserService;
 import org.example.spring.validation.group.CreateAction;
 import org.example.spring.validation.group.UpdateAction;
+import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -29,6 +32,7 @@ import static org.example.spring.http.util.Utils.USER_VIEW_PAGE;
 @RequiredArgsConstructor
 @RequestMapping("/users")
 @Controller
+@SessionAttributes("test")
 public class UserController {
 
     private final UserService userService;
@@ -36,6 +40,9 @@ public class UserController {
 
     @GetMapping
     public String findAll(Model model, UserFilter userFilter){
+//        Cookie cookie = new Cookie("test", "hello");
+//        cookie.setMaxAge(10000);
+//        response.addCookie(cookie);
         model.addAttribute("users", userService.findAll(userFilter));
         model.addAttribute("userFilter", userFilter);
 //        return "redirect:/users";
